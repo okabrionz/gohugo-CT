@@ -1,0 +1,20 @@
+{{ partial "head" . }}
+{{ partial "nav" . }}
+
+{{ partial "jumbotron" (dict "imageUrl" "https://source.unsplash.com/random/1366x768" "title" "Latest Posts" "subtitle" "Find what You need to fill what information You need here.") }}
+
+<div class="main main-raised">
+    <div class="container">
+        <div class="section landing-section">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                <div class="post-preview">
+      {{ range .Data.Pages }}
+            {{ .Render "li"}}
+      {{ end }}
+      </div>
+            </div>
+        </div>
+    </div></div></div>
+
+{{ partial "footer" . }}

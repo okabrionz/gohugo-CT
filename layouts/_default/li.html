@@ -1,0 +1,15 @@
+   <div class="post-preview mb3 mt-3">
+   	<a href="{{ .Permalink }}">
+ 	{{ if .Params.image }}<img width="768px" class="img-thumbnail mx-auto d-block mb-3" src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
+    </a>
+   <h2 class="post-title">
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2><small class="post-meta">Read in {{ .ReadingTime }} minutes</small>
+                        <div class="fb-save" data-uri="https://blog.okabrionz.com{{ .Permalink }}"></div>
+    <p class="lead">
+        {{ .Description }}
+        <a href="{{ .Permalink }}"> Continue Reading <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+    </p>
+    <hr>
+    
+   </div>

@@ -1,0 +1,14 @@
+{{ partial "head" . }}
+
+{{ partial "nav" . }}
+
+		{{ partial "jumbotron" (dict "imageUrl" "/img/bgury.svg" "title" "Oka bRionZ Blog" "subtitle" "Learn and Share in Same Place." "buttonUrl" "/post" "buttonText" "Explore the Blog") }}
+
+		<!--
+		{{ partial "short-text" (dict "heading" "Ready to Learn?" "text" "Let's learn anything here in one place and together with me. Also, I have some Domains and Design portfolio inside.")}}
+		-->
+
+
+{{ partial "blog" . }}
+
+{{ partial "footer" . }}

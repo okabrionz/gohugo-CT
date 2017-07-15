@@ -1,0 +1,18 @@
+    <div class="wrapper">
+        <div class="header header-filter" style="background-image: url('https://source.unsplash.com/random/1366x768');">
+            <div class="container">
+                <div class="row">
+					<div class="col-md-6 center">
+						<h1 class="title">{{.title}}</h1>
+                        {{ if .subtitle }}
+                        <p class="lead">{{.subtitle}}</p>
+                        {{ end }}
+                        <br />
+                        {{ if .buttonUrl }}
+	                    <a href="{{.buttonUrl}}" class="btn btn-danger btn-raised btn-lg">
+							{{.buttonText}}
+						</a>{{ end }}
+					</div>
+                </div>
+            </div>
+        </div>
